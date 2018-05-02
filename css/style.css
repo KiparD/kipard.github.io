@@ -87,6 +87,10 @@ body {
     margin-right: 0;
 }
 
+.lang a:first-child {
+  margin-right: 7px;
+}
+
 .main-nav a {
     color: #ffffff;
     text-decoration: none;
@@ -277,6 +281,7 @@ body {
 .reference-title {
     display: inline;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .reference-source {
@@ -357,6 +362,8 @@ body {
 }
 
 .popular-items {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
 
@@ -367,41 +374,34 @@ body {
 }
 
 .catalog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
-    float: left;
-    width: 262px;
-    margin-right: 48px;
+    width: 270px;
     padding: 15px 22px;
-    padding-top: 221px;
+    padding-top: 225px;
     font-size: 16px;
     border: 1px solid #d8d8d8;
 }
 
-.catalog-item:last-child {
-    margin-right: 0;
+.catalog-item .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .catalog-item img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 306px;
-    height: 206px;
+    width: 314px;
  }
 
 .catalog-item h3 {
-    float: left;
-    max-width: 205px;
     margin: 0;
-    margin-bottom: 20px;
     font-size: 16px;
     color: #000000;
-}
-
-.catalog-item-price {
-    float: right;
-    max-width: 55px;
-    margin-bottom: 20px;
 }
 
 .catalog-item .btn {
@@ -480,7 +480,7 @@ body {
 }
 
 .feedback .section-title {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .feedback-tip {
@@ -615,7 +615,7 @@ body {
 
 .footer-menu {
     float: left;
-    width: 150px;
+    width: 155px;
     margin-right: 20px;
 }
 
@@ -659,7 +659,7 @@ body {
 
 .footer-social {
     float: left;
-    width: 490px;
+    width: 495px;
     font-size: 0;
 }
 
