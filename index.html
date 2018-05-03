@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>The Great Keksby</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/logo55x55.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -21,20 +22,25 @@
             <li><a href="#catalog">Каталог</a></li>
             <li><a href="#reviews">Відгуки</a></li>
             <li class="lang">
-                <a href="index.html">Ua</a>
-                <a href="#">En</a>
+                <a href="index.html" title="Українська">Ua</a>
+                <a href="#" title="English">En</a>
             </li>
           </ul>
 
           <a class="btn btn-quick-order" href="#feedback">Замовити</a>
         </div>
 
+        <video autoplay loop width="440" class="promo-video">
+          <source src="video/promo.mp4" type="video/mp4">
+          <source src="video/promo.webm" type="video/webm">
+        </video>
+
         <div class="promo">
-          <a href="#">Аксесуари для котів<br> Колекція FW15</a>
+          <a href="#price">Аксесуари для котів<br> Колекція FW15</a>
         </div>
 
       </div>
-    </div>
+    </div> <!-- page-header -->
 
     <div class="features">
       <div class="container">
@@ -290,5 +296,26 @@
       </div>
     </div>
 
+    <!-- To top button -->
+    <button onclick="toTop()" id="toTopButton" title="Вгору"><i class="fas fa-rocket"></i></button>
+
+    <script>
+      // When the user scrolls down 100px from the top of the document, show the button
+      window.onscroll = function() { scrollFunction() };
+
+      function scrollFunction() {
+        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          document.getElementById('toTopButton').style.display = 'block';
+        } else {
+          document.getElementById('toTopButton').style.display = 'none';
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function toTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0 // For Chorome, Firefox, IE and Opera
+      }
+    </script>
   </body>
 </html>

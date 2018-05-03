@@ -26,6 +26,7 @@ body {
 .page-header {
     min-height: 490px;
     padding-top: 35px;
+    padding-bottom: 70px;
     background-image: url("../img/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +40,7 @@ body {
 }
 
 .header-top {
-    margin-bottom: 125px;
+    margin-bottom: 0;
 }
 
 .header-logo {
@@ -54,16 +55,27 @@ body {
 }
 
 .promo {
+  position: relative;
+    margin-top: -150px;
     font-weight: bold;
     font-size: 45px;
     line-height: 55px;
     font-family: "Georgia", serif;
     text-align: center;
+    z-index: 25;
 }
 
 .promo a {
     color: #ffffff;
     text-decoration: none;
+    text-shadow: 0 0 4px black;
+}
+
+.promo-video {
+  display: block;
+  margin: 30px auto;
+  border-radius: 50%;
+  border: 4px solid #fff;
 }
 
 /* Main navigation */
@@ -147,6 +159,45 @@ body {
     color: rgba(64, 64, 64, 0.3);
     background-color: #ffffff;
     border-color: #ffffff;
+}
+
+#toTopButton {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(150, 150, 150, 0.1);
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+#toTopButton:hover {
+  background: rgba(150, 150, 150, 0.2);
+}
+
+.fa-rocket {
+  position: relative;
+  top: 325px;
+  font-size: 1.7em;
+  transform: rotate(-45deg);
+  color: rgba(163, 139, 112, 0.4);
+  animation: toTop 1.7s linear infinite;
+}
+
+#toTopButton:hover .fa-rocket {
+  color: rgba(163, 139, 112, 0.8);
+}
+
+@keyframes toTop {
+  from {top: 318px; text-shadow: 0 2px 3px rgba(50, 50, 50, 0.2);}
+  50% {top: 312px; text-shadow: 0 4px 5px rgba(50, 50, 50, 0.2);}
+  to {top: 318px; text-shadow: 0 2px 3px rgba(50, 50, 50, 0.2);}
 }
 
 /* Features */
