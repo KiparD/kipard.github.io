@@ -24,7 +24,7 @@ body {
 
 /* Main header */
 .page-header {
-    min-height: 490px;
+    height: 525px;
     padding-top: 35px;
     padding-bottom: 45px;
     background-image: url("../img/header-bg.jpg");
@@ -55,10 +55,8 @@ body {
 }
 
 .promo {
-    position: absolute;
+    position: relative;
     bottom: 150px;
-    left: 50%;
-    transform: translateX(-50%);
     font-weight: bold;
     font-size: 45px;
     line-height: 55px;
