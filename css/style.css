@@ -183,7 +183,7 @@ body {
 
 .fa-rocket {
   position: relative;
-  top: 325px;
+  top: 345px;
   font-size: 1.7em;
   transform: rotate(-45deg);
   color: rgba(163, 139, 112, 0.4);
@@ -195,9 +195,9 @@ body {
 }
 
 @keyframes toTop {
-  from {top: 318px; text-shadow: 0 2px 3px rgba(50, 50, 50, 0.2);}
-  50% {top: 312px; text-shadow: 0 4px 5px rgba(50, 50, 50, 0.2);}
-  to {top: 318px; text-shadow: 0 2px 3px rgba(50, 50, 50, 0.2);}
+  from {top: 338px; text-shadow: 0 2px 3px rgba(50, 50, 50, 0.2);}
+  50% {top: 342px; text-shadow: 0 4px 5px rgba(50, 50, 50, 0.2);}
+  to {top: 338px; text-shadow: 0 2px 3px rgba(50, 50, 50, 0.2);}
 }
 
 /* Features */
